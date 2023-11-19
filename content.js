@@ -4,7 +4,7 @@ function modifyHeaders() {
   const headers = document.querySelectorAll('h4.lead.text-center');
   headers.forEach(header => {
     header.style.fontWeight = isModified ? 'normal' : 'bold';
-    header.style.transform = isModified ? 'none' : 'rotate(270deg)';
+    header.style.transform = isModified ? 'none' : 'rotate(45deg)';
   });
 }
 
