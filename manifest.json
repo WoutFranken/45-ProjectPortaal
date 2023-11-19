@@ -1,14 +1,18 @@
 {
-  "manifest_version": 3,
-  "name": "Header Modifier",
-  "version": "1.2",
-  "description": "Modifies <h4> headers on the page.",
+  "manifest_version": 2,
+  "name": "Stedin Header 45 graden",
+  "version": "1.1",
+  "description": "ProjectPortaal header 45 graden.",
 
   "permissions": ["activeTab"],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
     "default_popup": "popup.html"
   }
 }
