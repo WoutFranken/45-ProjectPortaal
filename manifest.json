@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Header Modifier",
+  "version": "1.2",
+  "description": "Modifies <h4> headers on the page.",
+
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
