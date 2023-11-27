@@ -1,7 +1,7 @@
 let isModified = false;
 
 function modifyHeaders() {
-  const headers = document.querySelectorAll('h4.lead.text-center');
+  const headers = document.querySelectorAll('.jss325');
   headers.forEach(header => {
     header.style.fontWeight = isModified ? 'normal' : 'bold';
     header.style.transform = isModified ? 'none' : 'rotate(45deg)';
