@@ -4,7 +4,7 @@ function modifyHeaders() {
   const headers = document.querySelectorAll('.jss325');
   headers.forEach(header => {
     header.style.fontWeight = isModified ? 'normal' : 'bold';
-    header.style.transform = isModified ? 'none' : 'rotate(45deg)';
+    header.style.transform = isModified ? 'none' : 'rotate(225deg)';
   });
 }
 
